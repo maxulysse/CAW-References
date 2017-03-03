@@ -1,49 +1,29 @@
-<img src="doc/Logo.png" width="300" title="CAW">
+[![](doc/images/CAW-logo.png "CAW")](https://github.com/SciLifeLab/CAW)
+
 # References for CAW
 
-[Cancer Analysis Workflow](https://github.com/SciLifeLab/CAW) developed at the [National Genomics Infastructure](https://ngisweden.scilifelab.se/)
-at [SciLifeLab Stockholm](https://www.scilifelab.se/platforms/ngi/), Sweden.
+[![Licence][licence-badge]][licence-link] [![nextflow version][nextflow-badge]][nextflow-link] [![Join the chat at https://gitter.im/SciLifeLab/CAW][gitter-badge]][gitter-link]
+
+CAW is a complete open source pipeline to detect somatic variants from WGS data developed at the [National Genomics Infastructure][nig-link] at [SciLifeLab Stockholm][scilifelab-stockholm-link], Sweden.
 
 For further information/help contact: maxime.garcia@scilifelab.se or szilveszter.juhos@scilifelab.se, or join the gitter chat: [gitter.im/SciLifeLab/CAW][gitter-link]
 
+## Documentation
 
-We are using the [GATK bundle](https://software.broadinstitute.org/gatk/download/bundle) __b37__ for most of our reference files.
+This repo comes with documentation about the reference files, found in the `doc/` directory:
+1\. [Documentation about reference files](docs/REFERENCES.md)
 
-Following files need to be downloaded (and unzipped):
-- '1000G_phase1.indels.b37.vcf'
-- '1000G_phase1.indels.b37.vcf.idx'
-- 'dbsnp_138.b37.vcf'
-- 'dbsnp_138.b37.vcf.idx'
-- 'human_g1k_v37_decoy.dict.gz'
-- 'human_g1k_v37_decoy.fasta.fai.gz'
-- 'human_g1k_v37_decoy.fasta.gz'
-- 'Mills_and_1000G_gold_standard.indels.b37.vcf'
-- 'Mills_and_1000G_gold_standard.indels.b37.vcf.idx'
+## Author
+- [Maxime Garcia](https://github.com/MaxUlysse)
 
-This file is on our repo so it will be easy ;-)
-- '[centromeres.list](https://raw.githubusercontent.com/SciLifeLab/CAW/master/repeats/centromeres.list)'
+[![](doc/images/SciLifeLab_logo.png "SciLifeLab")](http://www.scilifelab.se/) [![](doc/images/NGI-final-small.png "NGI")](https://ngisweden.scilifelab.se/)
 
-The last files are made when indexing human_g1k_v37_decoy.fasta with bwa.
 
-- 'human_g1k_v37_decoy.fasta.pac'
-- 'human_g1k_v37_decoy.fasta.amb'
-- 'human_g1k_v37_decoy.fasta.ann'
-- 'human_g1k_v37_decoy.fasta.bwt'
-- 'human_g1k_v37_decoy.fasta.sa'
-
-You can do that by using your own bwa:
-
-```
-bwa index human_g1k_v37_decoy.fasta
-```
-
-Or using a Docker image containing it:
-
-```
-docker run -v `pwd`:/tmp -w /tmp maxulysse/mapreads:1.0 bwa index human_g1k_v37_decoy.fasta
-```
-
-The rest of the references files are stored in [this repo](https://github.com/MaxUlysse/CAW-References) using [GIT-LFS](https://git-lfs.github.com/) and in [export.uppmax.uu.se](https://export.uppmax.uu.se/b2015110/caw-references/b37/) :
-- '1000G_phase3_20130502_SNP_maf0.3.loci'
-- 'b37_cosmic_v74.noCHR.sort.4.1.vcf.idx'
-- 'b37_cosmic_v74.noCHR.sort.4.1.vcf'
+[gitter-badge]: https://badges.gitter.im/SciLifeLab/CAW.svg
+[gitter-link]: https://gitter.im/SciLifeLab/CAW
+[licence-badge]: https://img.shields.io/github/license/MaxUlysse/CAW-References.svg
+[licence-link]: https://github.com/MaxUlysse/CAW-References/blob/master/LICENSE
+[nextflow-badge]: https://img.shields.io/badge/nextflow-%E2%89%A50.22.2-brightgreen.svg
+[nextflow-link]: https://www.nextflow.io/
+[ngi-link]: https://ngisweden.scilifelab.se/
+[scilifelab-stockholm-link]: https://www.scilifelab.se/platforms/ngi/
