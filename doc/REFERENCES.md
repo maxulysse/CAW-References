@@ -40,3 +40,8 @@ The rest of the references files are stored in [this repo](https://github.com/Ma
 - '1000G_phase3_20130502_SNP_maf0.3.loci'
 - 'b37_cosmic_v74.noCHR.sort.4.1.vcf.idx'
 - 'b37_cosmic_v74.noCHR.sort.4.1.vcf'
+
+[![](images/SciLifeLab_logo.png "SciLifeLab")][scilifelab-link] [![](images/NGI-final-small.png "NGI")][ngi-link]
+
+[ngi-link]: https://ngisweden.scilifelab.se/
+[scilifelab-link]: http://www.scilifelab.se/
