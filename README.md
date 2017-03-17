@@ -1,4 +1,4 @@
-[![](doc/images/CAW-logo.png "CAW")](https://github.com/SciLifeLab/CAW)
+[![](doc/images/CAW-logo.png "CAW")][CAW-site-link]
 
 # References for CAW
 
@@ -19,6 +19,7 @@ This repo comes with documentation about the reference files, found in the `doc/
 ---
 [![](doc/images/SciLifeLab_logo.png "SciLifeLab")][scilifelab-link] [![](doc/images/NGI-final-small.png "NGI")][ngi-link]
 
+[CAW-site-link]: http://opensource.scilifelab.se/projects/caw/
 [gitter-badge]: https://badges.gitter.im/SciLifeLab/CAW.svg
 [gitter-link]: https://gitter.im/SciLifeLab/CAW
 [licence-badge]: https://img.shields.io/github/license/MaxUlysse/CAW-References.svg
